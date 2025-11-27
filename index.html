@@ -3,36 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Иван Иванов - Сайт-визитка</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; }
-        .container { max-width: 800px; margin: 50px auto; padding: 0 20px; }
-        header { text-align: center; margin-bottom: 50px; }
-        h1 { color: #2c3e50; }
-        .contact-list { list-style: none; padding: 0; }
-        .contact-list li { margin-bottom: 10px; }
-        a { color: #3498db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-    </style>
+    <title>Главная | Сайт-визитка</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Иван Иванов</h1>
-            <p>Веб-разработчик и дизайнер</p>
-        </header>
-        <section>
-            <h2>Обо мне</h2>
-            <p>Привет! Я занимаюсь созданием современных и удобных веб-сайтов. Имею опыт в HTML, CSS и JavaScript.</p>
-        </section>
-        <section>
-            <h2>Контакты</h2>
-            <ul class="contact-list">
-                <li>Email: <a href="mailto:ivan@example.com">ivan@example.com</a></li>
-                <li>Телеграм: <a href="https://t.me/your_profile">@your_profile</a></li>
-                <li>GitHub: <a href="https://github.com/your_profile">github.com/your_profile</a></li>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">ВашеИмя</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
-        </section>
-    </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Привет, я [Ваше Имя]</h1>
+                <h2>Веб-разработчик & Дизайнер</h2>
+                <p>Создаю современные и функциональные веб-сайты с уникальным дизайном и вниманием к деталям.</p>
+                <div class="hero-buttons">
+                    <a href="about.html" class="btn">Узнать больше</a>
+                    <a href="contacts.html" class="btn btn-outline">Связаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section features">
+        <div class="container">
+            <h2 class="section-title">Что я предлагаю</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Веб-разработка</h3>
+                    <p>Создание современных и адаптивных веб-сайтов с использованием передовых технологий.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Дизайн</h3>
+                    <p>Разработка интуитивно понятных интерфейсов с акцентом на пользовательский опыт.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Адаптивный дизайн</h3>
+                    <p>Сайты, которые идеально выглядят на всех устройствах - от смартфонов до десктопов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="logo">ВашеИмя</a>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Ваше Имя. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
